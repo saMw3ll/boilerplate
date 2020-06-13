@@ -4,6 +4,8 @@ game.PlayScreen = me.Stage.extend({
      */
     onResetEvent: function() {
         // reset the score
+        me.levelDirector.loadLevel("untitled");
+        console.log(":hi");
         game.data.score = 0;
 
         // Add our HUD to the game world, add it last so that this is on top of the rest.
